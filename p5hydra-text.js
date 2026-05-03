@@ -12,9 +12,9 @@ let index = 0;
 let index2 = 0;
 let index3 = 0;
 let index4 = 0;
-let colorArray = ['rgb(255, 0, 0)', 'rgb(229, 255, 0)', 'rgb(255, 255, 255)', 'rgb(255, 0, 0)', 'rgb(255, 255, 255)'];
+let colorArray = ['rgb(255, 0, 0)', 'rgb(229, 255, 0)', 'rgb(0, 0, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 0)'];
 let fontArray = ['Arial', 'Georgia', 'Times New Roman', 'Courier New', 'Verdana'];
-let colorArray3 = ['rgb(0, 153, 255)', 'rgb(255, 255, 255)', 'rgb(21, 0, 255)', 'rgba(4, 161, 10, 0.5)',];
+let colorArray3 = ['rgb(0, 153, 255)', 'rgb(0, 0, 0)', 'rgb(255, 0, 0)', 'rgba(4, 161, 10, 0.5)',];
 let colorArray4 = ['rgb(255, 255, 255)', 'rgb(0, 0, 0)', 'rgb(43, 255, 1)', 'rgb(255, 255, 255)', 'rgb(0, 255, 76)'];
 let gothicfontArray = ['Blackletter', 'Fraktur', 'Gothic', 'Old English Text MT', 'Cloister Black'];
 
@@ -27,7 +27,7 @@ createCanvas(windowWidth, windowHeight);
 
 
 function draw() {
-  background(0); // white background
+  background(255); // white background
 // let responsiveScale = min(windowWidth, windowHeight) / 700; // Scale based on screen size
   // clear(); // transparent background
   textSize(43); // dynamic text size based on noise
@@ -41,14 +41,14 @@ function draw() {
   index2 = noise(index) * textArray2.length; // Use noise to create a more organic change in index2
   index = index + 0.030;
   fill(colorArray[Math.floor(index) % colorArray.length]); // light text, adjust as needed
-   text(textArray[Math.floor(index) % textArray.length], windowWidth * 0.08, windowHeight / 2.3);
+   text(textArray[Math.floor(index) % textArray.length], windowWidth * 0.2, windowHeight / 2.3);
    //floor means round down to the nearest whole number, 
    // so it ensures that we get a valid index for the textArray.
   textSize(43); // responsive text size
-  text(textArray2[Math.floor(index2)], windowWidth * 0.08, windowHeight / 1.9);
+  text(textArray2[Math.floor(index2)], windowWidth * 0.2, windowHeight / 1.9);
   textFont(fontArray[Math.floor(index) % fontArray.length]);
   fill(colorArray3[Math.floor(index3) % colorArray3.length]);
-  text(textArray4[Math.floor(index3)], windowWidth * 0.08, windowHeight / 1.6);
+  text(textArray4[Math.floor(index3)], windowWidth * 0.2, windowHeight / 1.6);
   index3 = index + 0.030;
   index4 = index + 0.060;
   fill(colorArray4[Math.floor(index4) % colorArray4.length]);
@@ -57,7 +57,7 @@ function draw() {
   // Change windowHeight / 2 to move up/down (0 = top, windowHeight = bottom)
   textSize(43); // responsive text size
   textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
-  text(textArray4[Math.floor(index4)], windowWidth * 0.08, windowHeight / 1.4);
+  text(textArray4[Math.floor(index4)], windowWidth * 0.2, windowHeight / 1.4);
   textArray5[Math.floor(index2)] = ""; // Clear the current word in textArray5 to create a fading effect
   // Display textArray3 spread across the background
   // for (let i = 0; i < textArray3.length; i++) {
@@ -69,6 +69,6 @@ function draw() {
   // }
   textSize(29); // responsive text size
       textFont(gothicfontArray[Math.floor(index3) % gothicfontArray.length]);
-  text(textArray3[Math.floor(index2)], windowWidth * 0.05, windowHeight / 1.5);
+  text(textArray3[Math.floor(index2)], windowWidth * 0.09, windowHeight / 1.5);
 
 }
