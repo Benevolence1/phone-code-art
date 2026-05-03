@@ -1,5 +1,5 @@
-let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", "2024"]
-let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", "17", ]
+let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", "2024", "Endure"]
+let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", "17", "Slavery"]
 let textArray3 = ["Why do I have to experience this?", "Occult?", "Why doesn't this work?"]
 // let textArray3 = ["Discussions","Facilitator", "Learner", "Ambient Conditions", 'Content', "Strategy", ""]
 
@@ -46,9 +46,9 @@ function draw() {
    // so it ensures that we get a valid index for the textArray.
   textSize(43); // responsive text size
   text(textArray2[Math.floor(index2)], windowWidth * 0.2, windowHeight / 1.9);
-  textFont(fontArray[Math.floor(index) % fontArray.length]);
+  textFont(gothicfontArray[Math.floor(index) % gothicfontArray.length]);
   fill(colorArray3[Math.floor(index3) % colorArray3.length]);
-  text(textArray4[Math.floor(index3)], windowWidth * 0.2, windowHeight / 1.6);
+  text(textArray4[Math.floor(index2)], windowWidth * 0.2, windowHeight / 1.6);
   index3 = index + 0.030;
   index4 = index + 0.060;
   fill(colorArray4[Math.floor(index4) % colorArray4.length]);
@@ -58,7 +58,6 @@ function draw() {
   textSize(43); // responsive text size
   textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
   text(textArray4[Math.floor(index4)], windowWidth * 0.2, windowHeight / 1.4);
-  textArray5[Math.floor(index2)] = ""; // Clear the current word in textArray5 to create a fading effect
   // Display textArray3 spread across the background
   // for (let i = 0; i < textArray3.length; i++) {
   //   fill(colorArray3[Math.floor(index3 + i) % colorArray3.length]);
@@ -68,7 +67,7 @@ function draw() {
   //        noise(index + i * 0.05) * windowHeight * 0.08 + windowHeight * 0.01);
   // }
   textSize(35); // responsive text size
-      textFont(gothicfontArray[Math.floor(index3) % gothicfontArray.length]);
+      textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
   text(textArray3[Math.floor(index2)], windowWidth * 0.09, windowHeight / 1.5);
 
 }
