@@ -1,10 +1,10 @@
-let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", "2024", "Endure"]
-let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", "17", "Slavery"]
-let textArray3 = ["Why do I have to experience this?", "Occult?", "Why doesn't this work?"]
+let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", "2024", "Endure", "I hate them, mom!", "Failed", "Where were you?"]
+let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", "17", "Slavery", "1945", "2007", "I'm sorry", "Groped"]
+let textArray3 = ["Why do I have to experience this?", "Occult?", "Why doesn't this work?",  "'Fuck you'", "Why did you leave me?"]
 // let textArray3 = ["Discussions","Facilitator", "Learner", "Ambient Conditions", 'Content', "Strategy", ""]
 
 
-let textArray4 = ['"I AM"', 'Morals', 'Forgiveness', "Where is he?", "Cycles", "Systems"]
+let textArray4 = [ '"I AM"', 'Morals', 'Forgiveness', "Where is he?", "Cycles", "Systems", "'Fuck you, Ami'Yah'", "Why doesn't the pain go away", "246 years", "WHY", "If I die?" ]
 
 let textArray5 = ["Power", "Teacher", "Student", 'Test', "Grades", "Morals", "Dynamics", "Empathy", "Status", "Privilege", "Justice", "Equity", "Inequity", "Systemic", "Oppression", "Liberation", "Activism", "Allyship", "Intersectionality", "Microaggressions", "Bias", "Stereotypes", "Discrimination", "Inclusion", "Diversity", "Representation", "Voice", "Agency", "Resistance", "Solidarity", "Community", "Change"]
 
@@ -14,11 +14,11 @@ let index3 = 0;
 let index4 = 0;
 let colorArray = ['rgb(255, 0, 0)', 'rgb(229, 255, 0)', 'rgb(0, 0, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 0)'];
 let fontArray = ['Arial', 'Georgia', 'Times New Roman', 'Courier New', 'Verdana'];
-let colorArray3 = ['rgb(0, 153, 255)', 'rgb(255, 255, 255)', 'rgb(255, 0, 0)', 'rgba(4, 161, 10, 0.5)',];
-let colorArray4 = ['rgb(255, 255, 255)', 'rgb(0, 0, 0)', 'rgb(43, 255, 1)', 'rgb(255, 255, 255)', 'rgb(0, 255, 76)'];
+let colorArray3 = ['rgb(0, 153, 255)', 'rgb(255, 255, 255)', 'rgb(255, 0, 0)', 'rgba(0, 255, 8, 0.5)',];
+let colorArray4 = ['rgb(255, 255, 255)', 'rgb(255, 0, 0)', 'rgb(43, 255, 1)', 'rgb(255, 255, 255)', 'rgb(0, 255, 76)'];
 let gothicfontArray = ['Blackletter', 'Fraktur', 'Gothic', 'Old English Text MT', 'Cloister Black'];
 
-let randomsmoothSpeed = 0.06; // Adjust this value to control the speed of the noise-based changes
+let randomsmoothSpeed = 0.01; // Adjust this value to control the speed of the noise-based changes
 
 function setup(){
 createCanvas(windowWidth, windowHeight);
