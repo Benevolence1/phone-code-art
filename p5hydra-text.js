@@ -31,7 +31,7 @@ function draw() {
   background(0); // white background
 // let responsiveScale = min(windowWidth, windowHeight) / 700; // Scale based on screen size
   // clear(); // transparent background
-  textSize(23); // dynamic text size based on noise
+  textSize(33); // dynamic text size based on noise
   fill(colorArray[Math.floor(index2) % colorArray.length]); // dark text, adjust as needed
   // why do we use math.floor? because we want to get an integer index for the array, 
   // and noise returns a float between 0 and 1,
@@ -42,21 +42,21 @@ function draw() {
   index2 = noise(index) * textArray2.length; // Use noise to create a more organic change in index2
   index = index + 0.030;
   fill(colorArray[Math.floor(index) % colorArray.length]); // light text, adjust as needed
-   text(textArray[Math.floor(index) % textArray.length], windowWidth * 0.08, windowHeight / 1.9);
+   text(textArray[Math.floor(index) % textArray.length], windowWidth * 0.08, windowHeight / 2.3);
    //floor means round down to the nearest whole number, 
    // so it ensures that we get a valid index for the textArray.
-  textSize(23); // responsive text size
-  text(textArray2[Math.floor(index2)], windowWidth * 0.08, windowHeight / 1.7);
+  textSize(33); // responsive text size
+  text(textArray2[Math.floor(index2)], windowWidth * 0.08, windowHeight / 1.9);
   textFont(fontArray[Math.floor(index) % fontArray.length]);
   fill(colorArray3[Math.floor(index3) % colorArray3.length]);
-  text(textArray4[Math.floor(index3)], windowWidth * 0.08, windowHeight / 1.3);
+  text(textArray4[Math.floor(index3)], windowWidth * 0.08, windowHeight / 1.6);
   index3 = index + 0.030;
   index4 = index + 0.060;
   fill(colorArray4[Math.floor(index4) % colorArray4.length]);
   // Position textArray4 in the middle on the right hand side
   // To adjust positioning: change windowWidth * 0.75 to move left/right (0 = left edge, 1 = right edge)
   // Change windowHeight / 2 to move up/down (0 = top, windowHeight = bottom)
-  textSize(23); // responsive text size
+  textSize(33); // responsive text size
   textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
   text(textArray4[Math.floor(index4)], windowWidth * 0.08, windowHeight / 1.4);
   textArray5[Math.floor(index2)] = ""; // Clear the current word in textArray5 to create a fading effect
