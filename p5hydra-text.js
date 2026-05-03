@@ -1,4 +1,3 @@
-
 let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", ""]
 let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", , ]
 let textArray3 = ["Why do I have to experience this?", "Occult?", "Why doesn't this work?"]
@@ -31,7 +30,7 @@ function draw() {
   background(0); // white background
 // let responsiveScale = min(windowWidth, windowHeight) / 700; // Scale based on screen size
   // clear(); // transparent background
-  textSize(33); // dynamic text size based on noise
+  textSize(43); // dynamic text size based on noise
   fill(colorArray[Math.floor(index2) % colorArray.length]); // dark text, adjust as needed
   // why do we use math.floor? because we want to get an integer index for the array, 
   // and noise returns a float between 0 and 1,
@@ -45,7 +44,7 @@ function draw() {
    text(textArray[Math.floor(index) % textArray.length], windowWidth * 0.08, windowHeight / 2.3);
    //floor means round down to the nearest whole number, 
    // so it ensures that we get a valid index for the textArray.
-  textSize(33); // responsive text size
+  textSize(43); // responsive text size
   text(textArray2[Math.floor(index2)], windowWidth * 0.08, windowHeight / 1.9);
   textFont(fontArray[Math.floor(index) % fontArray.length]);
   fill(colorArray3[Math.floor(index3) % colorArray3.length]);
@@ -56,7 +55,7 @@ function draw() {
   // Position textArray4 in the middle on the right hand side
   // To adjust positioning: change windowWidth * 0.75 to move left/right (0 = left edge, 1 = right edge)
   // Change windowHeight / 2 to move up/down (0 = top, windowHeight = bottom)
-  textSize(33); // responsive text size
+  textSize(43); // responsive text size
   textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
   text(textArray4[Math.floor(index4)], windowWidth * 0.08, windowHeight / 1.4);
   textArray5[Math.floor(index2)] = ""; // Clear the current word in textArray5 to create a fading effect
@@ -68,8 +67,8 @@ function draw() {
   //        (windowWidth / textArray2.length) * i + windowWidth / 20, 
   //        noise(index + i * 0.05) * windowHeight * 0.08 + windowHeight * 0.01);
   // }
-  textSize(23); // responsive text size
+  textSize(29); // responsive text size
       textFont(gothicfontArray[Math.floor(index3) % gothicfontArray.length]);
-  text(textArray3[Math.floor(index2)], windowWidth * 0.002, windowHeight / 1.5);
+  text(textArray3[Math.floor(index2)], windowWidth * 0.05, windowHeight / 1.5);
 
 }
