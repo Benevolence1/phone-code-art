@@ -1,5 +1,5 @@
-let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", ""]
-let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", , ]
+let textArray = ["Faith","Rebirth", "Death", "He has a plan",  "...", "2024"]
+let textArray2 = ["Where is he?", "Why", "", 'High-School', "Japan", "17", ]
 let textArray3 = ["Why do I have to experience this?", "Occult?", "Why doesn't this work?"]
 // let textArray3 = ["Discussions","Facilitator", "Learner", "Ambient Conditions", 'Content', "Strategy", ""]
 
@@ -14,7 +14,7 @@ let index3 = 0;
 let index4 = 0;
 let colorArray = ['rgb(255, 0, 0)', 'rgb(229, 255, 0)', 'rgb(0, 0, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 0)'];
 let fontArray = ['Arial', 'Georgia', 'Times New Roman', 'Courier New', 'Verdana'];
-let colorArray3 = ['rgb(0, 153, 255)', 'rgb(0, 0, 0)', 'rgb(255, 0, 0)', 'rgba(4, 161, 10, 0.5)',];
+let colorArray3 = ['rgb(0, 153, 255)', 'rgb(255, 255, 255)', 'rgb(255, 0, 0)', 'rgba(4, 161, 10, 0.5)',];
 let colorArray4 = ['rgb(255, 255, 255)', 'rgb(0, 0, 0)', 'rgb(43, 255, 1)', 'rgb(255, 255, 255)', 'rgb(0, 255, 76)'];
 let gothicfontArray = ['Blackletter', 'Fraktur', 'Gothic', 'Old English Text MT', 'Cloister Black'];
 
@@ -27,7 +27,7 @@ createCanvas(windowWidth, windowHeight);
 
 
 function draw() {
-  background(255); // white background
+  background(0); // white background
 // let responsiveScale = min(windowWidth, windowHeight) / 700; // Scale based on screen size
   // clear(); // transparent background
   textSize(43); // dynamic text size based on noise
@@ -67,7 +67,7 @@ function draw() {
   //        (windowWidth / textArray2.length) * i + windowWidth / 20, 
   //        noise(index + i * 0.05) * windowHeight * 0.08 + windowHeight * 0.01);
   // }
-  textSize(29); // responsive text size
+  textSize(35); // responsive text size
       textFont(gothicfontArray[Math.floor(index3) % gothicfontArray.length]);
   text(textArray3[Math.floor(index2)], windowWidth * 0.09, windowHeight / 1.5);
 
