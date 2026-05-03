@@ -46,10 +46,10 @@ function draw() {
    //floor means round down to the nearest whole number, 
    // so it ensures that we get a valid index for the textArray.
   textSize((noise(50) * 50 + 20) * 2); // responsive text size
-  text(textArray2[Math.floor(index2)], windowWidth * 0.05, windowHeight / 1.3);
+  text(textArray2[Math.floor(index2)], windowWidth * 0.02, windowHeight / 1.3);
   textFont(fontArray[Math.floor(index) % fontArray.length]);
   fill(colorArray3[Math.floor(index3) % colorArray3.length]);
-  text(textArray4[Math.floor(index3)], windowWidth / 0.05, windowHeight / 3);
+  text(textArray4[Math.floor(index3)], windowWidth / 0.02, windowHeight / 3);
   index3 = index + 0.030;
   index4 = index + 0.060;
   fill(colorArray4[Math.floor(index4) % colorArray4.length]);
@@ -58,7 +58,7 @@ function draw() {
   // Change windowHeight / 2 to move up/down (0 = top, windowHeight = bottom)
   textSize((noise(50) * 50 + 20) * 2); // responsive text size
   textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
-  text(textArray4[Math.floor(index4)], windowWidth * 0.05, windowHeight / 3);
+  text(textArray4[Math.floor(index4)], windowWidth * 0.02, windowHeight / 3);
   textArray5[Math.floor(index2)] = ""; // Clear the current word in textArray5 to create a fading effect
   // Display textArray3 spread across the background
   // for (let i = 0; i < textArray3.length; i++) {
