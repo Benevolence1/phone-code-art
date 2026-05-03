@@ -39,7 +39,7 @@ function draw() {
   // text(textArray[Math.floor(index)], windowWidth * 0.45, windowHeight / 4);
   // text(textArray2[Math.floor(index2)], windowWidth * 0.45, windowHeight / 4);
   index2 = noise(index) * textArray2.length; // Use noise to create a more organic change in index2
-  index = index + 0.030;
+  index = index + 0.008;
   fill(colorArray[Math.floor(index) % colorArray.length]); // light text, adjust as needed
    text(textArray[Math.floor(index) % textArray.length], windowWidth * 0.2, windowHeight / 2.9);
    //floor means round down to the nearest whole number, 
@@ -48,8 +48,8 @@ function draw() {
   text(textArray2[Math.floor(index2)], windowWidth * 0.2, windowHeight / 2.5);
   textFont(gothicfontArray[Math.floor(index) % gothicfontArray.length]);
   fill(colorArray3[Math.floor(index3) % colorArray3.length]);
-  text(textArray4[Math.floor(index2)], windowWidth * 0.09, windowHeight / 2.1);
-  index3 = index + 0.030;
+  text(textArray4[Math.floor(index2)], windowWidth * 0.01, windowHeight / 2.1);
+  index3 = index + 0.080;
   index4 = index + 0.060;
   fill(colorArray4[Math.floor(index4) % colorArray4.length]);
   // Position textArray4 in the middle on the right hand side
@@ -57,7 +57,7 @@ function draw() {
   // Change windowHeight / 2 to move up/down (0 = top, windowHeight = bottom)
   textSize(43); // responsive text size
   textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
-  text(textArray4[Math.floor(index4)], windowWidth * 0.1, windowHeight / 1.5);
+  text(textArray4[Math.floor(index4)], windowWidth * 0.01, windowHeight / 1.5);
   // Display textArray3 spread across the background
   // for (let i = 0; i < textArray3.length; i++) {
   //   fill(colorArray3[Math.floor(index3 + i) % colorArray3.length]);
@@ -68,6 +68,6 @@ function draw() {
   // }
   textSize(35); // responsive text size
       textFont(gothicfontArray[Math.floor(index4) % gothicfontArray.length]);
-  text(textArray3[Math.floor(index2)], windowWidth * 0.09, windowHeight / 1.7);
+  text(textArray3[Math.floor(index2)], windowWidth * 0.01, windowHeight / 1.7);
 
 }
